@@ -1,19 +1,19 @@
 env:
-    MANIFEST: https://github.com/Octavi-Staging/manifest.git -b thirteen
+    MANIFEST: https://github.com/RisingTechOSS/android -b thirteen --git-lfs
     DEVICE: RMX1901
     OEM: realme
-    DT_LINK: https://github.com/shravansayz/device_realme_RMX1901_T.git -b octavi
+    DT_LINK: https://github.com/Shravan55555/device_realme_RMX1901_13.git -b Rise
     DT_PATH: device/realme/RMX1901
-    VT_LINK: https://github.com/SlicKker-001/vendor_realme_RMX1901.git  -b 13
-    KT_LINK: https://github.com/ashim-anwar/kernel_realme_RMX1901.git -b x.337-KSU
+    VT_LINK: https://github.com/shravansayz/vendor_realme_RMX1901.git  -b 13
+    KT_LINK: https://github.com/H1mJT/kernel_realme_RMX1901.git -b x.337_ksu
     VT_PATH: vendor/realme/RMX1901
     KT_PATH: kernel/realme/RMX1901
-    LUNCH_COMBO: octavi_${DEVICE}-userdebug
-    OUTPUT: O*.zip
-    CLO: idl:ci
-    CLO_1: ENCRYPTED[!f1d6be2955abc0e707d19e911e742d164c53d4abd3136d5cda5bc0c25a09e9a7f8668ea263e382612f3f8de8f51a6413!]
-    URI: https://fleur.shazuxd7.workers.dev/0:/ci/ccache.tar.gz
-    ROM_U: 1
+    LUNCH_COMBO: lineage_${DEVICE}-userdebug
+    OUTPUT: r*.zip
+    CLO: RMX1901:AppDrive
+    CLO_1: ENCRYPTED[!898649562db3ebfe7fc561b335e268170e5375730036b54e68517dd7d2e30102bc622e6a87f0dd4e878d9f045afb74da!]
+    URI: example
+    ROM_U: 0
 task:
   name: "Setting Up, Syncing, Building and Uploading..."
   timeout_in: 120m
