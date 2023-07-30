@@ -1,4 +1,5 @@
 #!/bin/bash
+sync() {
 mkdir -p ~/work
 cd ~/work
 repo init --depth=1 -u $MANIFEST
@@ -7,5 +8,6 @@ git clone $DT_LINK $DT_PATH
 git clone $VT_LINK $VT_PATH
 git clone $KT_LINK $KT_PATH
 git clone $CT_LINK $CT_PATH
+}
 echo "Sync Done"
 echo "Now Build Will Begin"
