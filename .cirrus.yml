@@ -18,7 +18,7 @@ task:
   name: "Setting Up, Syncing, Building and Uploading..."
   timeout_in: 120m
   container:
-      image: apon77/aosp:cirrus
+      image: accupara/ubuntu:22.04
       cpu: 8
       memory: 32G
 
